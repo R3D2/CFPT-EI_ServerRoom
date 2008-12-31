@@ -2,7 +2,9 @@
 
 ## Problématiques restantes
 
-* Prise murale de la salle serveur non-alimenté
+* Carte SCSI non reconnu par le serveur PVE03
+* ~~Prise murale de la salle serveur non-alimenté~~
+* ~~Câble SAS~~
 * ~~Date de pose du faux sol, mi-janvier~~
 * ~~Date de pose de la fibre, mi-janvier~~
 * ~~Matériel de patch~~
