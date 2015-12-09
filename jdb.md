@@ -12,3 +12,10 @@
 
 ### SC 
 * Conception et Ajout de l'inventaire à liste des documents du projet
+
+## 09.12.2015
+
+### Groupe
+
+### SC
+* Installation des serveurs en Ubuntu 14.04 LTS
