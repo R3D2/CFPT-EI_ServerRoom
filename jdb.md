@@ -27,6 +27,7 @@
 * KVM001 - DELL
 	* Homogéinisation de la taille des disques dans la baie
 	* Clear du RAID
+	* Configuration et initialisation d'un RAID 5
 
 ### LDB
 * Création d'un shéma pour l'architecture des racks et serveur
