@@ -20,15 +20,13 @@
 
 ### SC
 
-#### Archipel - HP Proliant 
+* Archipel - HP Proliant 
+	* Installation de Ubuntu 14.04 LTS
+	* Disk 0/2 Defect => WIP
 
-* Installation de Ubuntu 14.04 LTS
-* Disk 0/2 Defect => WIP
-
-#### KVM001 - DELL
-
-* Homogéinisation de la taille des disques dans la baie
-* Clear du RAID
+* KVM001 - DELL
+	* Homogéinisation de la taille des disques dans la baie
+	* Clear du RAID
 
 ### LDB
 * Création d'un shéma pour l'architecture des racks et serveur
