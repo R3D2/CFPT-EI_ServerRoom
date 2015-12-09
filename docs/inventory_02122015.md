@@ -18,4 +18,4 @@
 | YAHOO_5	| DELL 	| 6 			|  876 GB ( 2 * 73GB  / 4 * 146GB ) |
 | YAHOO_7	| DELL 	| 6 			|  876 GB ( 2 * 73GB  / 4 * 146GB ) |
 | YAHOO_2	| DELL 	| 3 			|  876 GB ( 1 * 73GB  / 1 * 146GB ) |
-| NONAME	| HP	| 10			|  1046 GB ( 10 * 146GB )			|
+| NONAME	| HP	| 10			|  1460 GB ( 10 * 146GB )			|
