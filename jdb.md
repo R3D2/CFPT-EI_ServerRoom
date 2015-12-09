@@ -18,4 +18,13 @@
 ### Groupe
 
 ### SC
-* Installation des serveurs en Ubuntu 14.04 LTS
+
+#### Archipel - HP Proliant 
+
+* Installation de Ubuntu 14.03 LTS
+* Disk 0/2 Defect => WIP
+
+#### KVM001 - DELL
+
+* Homogéinisation de la taille des disques dans la baie
+* Clear du RAID
