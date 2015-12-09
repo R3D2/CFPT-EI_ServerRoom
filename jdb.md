@@ -19,7 +19,6 @@
 * Définition du travail à faire
 
 ### SC
-
 * Archipel - HP Proliant 
 	* Installation de Ubuntu 14.04 LTS
 	* Disk 0/2 Defect => WIP
@@ -31,3 +30,7 @@
 
 ### LDB
 * Création d'un shéma pour l'architecture des racks et serveur
+
+### DW
+* Test Webcam du prof(iZiggi HD).
+* Recherche de caméra de Surveillance et création d'un document de comparaison.
