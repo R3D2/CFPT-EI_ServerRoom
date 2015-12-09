@@ -21,7 +21,7 @@ Définir clairement le besoin avec le client ou une personne proche pour défini
 
 Définir clairement le besoin avec le client ou une personne proche pour définir quel système mettre en place.
 
-### Loris Faeron
+### Loris De Biasi
 
 * Architecture des racks et serveur
 
