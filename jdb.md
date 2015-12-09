@@ -19,7 +19,6 @@
 * Définition du travail à faire
 
 ### SC
-
 * Archipel - HP Proliant 
 	* Installation de Ubuntu 14.04 LTS
 	* Disk 0/2 Defect => WIP
@@ -35,3 +34,8 @@
 ### KA
 * Commande de la sonde de température sur distrelec
 * Recherche des caractéristiques technique du Raspberry PI 2
+
+### DW
+* Test Webcam du prof(iZiggi HD).
+* Recherche de caméra de Surveillance et création d'un document de comparaison.
+
