@@ -7,7 +7,7 @@
 * Définition des contraintes et des besoins
 * Attribution des tâches : c.f Github du projet
 
-### DW/KA/LF
+### DW/KA/LDB
 * Etat des lieux de l'équipement de la salle serveur
 
 ### SC 
@@ -16,15 +16,19 @@
 ## 09.12.2015
 
 ### Groupe
+* Définition du travail à faire
 
 ### SC
 
 #### Archipel - HP Proliant 
 
-* Installation de Ubuntu 14.03 LTS
+* Installation de Ubuntu 14.04 LTS
 * Disk 0/2 Defect => WIP
 
 #### KVM001 - DELL
 
 * Homogéinisation de la taille des disques dans la baie
 * Clear du RAID
+
+### LDB
+* Création d'un shéma pour l'architecture des racks et serveur
