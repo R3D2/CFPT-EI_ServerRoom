@@ -7,8 +7,35 @@
 * Définition des contraintes et des besoins
 * Attribution des tâches : c.f Github du projet
 
-### DW/KA/LF
+### DW/KA/LDB
 * Etat des lieux de l'équipement de la salle serveur
 
 ### SC 
 * Conception et Ajout de l'inventaire à liste des documents du projet
+
+## 09.12.2015
+
+### Groupe
+* Définition du travail à faire
+
+### SC
+* Archipel - HP Proliant 
+	* Installation de Ubuntu 14.04 LTS
+	* Disk 0/2 Defect => WIP
+
+* KVM001 - DELL
+	* Homogéinisation de la taille des disques dans la baie
+	* Clear du RAID
+	* Configuration et initialisation d'un RAID 5
+
+### LDB
+* Création d'un shéma pour l'architecture des racks et serveur
+
+### KA
+* Commande de la sonde de température sur distrelec
+* Recherche des caractéristiques technique du Raspberry PI 2
+
+### DW
+* Test Webcam du prof(iZiggi HD).
+* Recherche de caméra de Surveillance et création d'un document de comparaison.
+
