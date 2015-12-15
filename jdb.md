@@ -11,7 +11,7 @@
 * Etat des lieux de l'équipement de la salle serveur
 
 ### SC 
-* Conception et Ajout de l'inventaire à liste des documents du projet
+* Conception et Ajout de l'inventaire à liste des documents du projet par rapport à l'état des lieux fait par le reste de l'équipe.
 
 ## 09.12.2015
 

@@ -7,6 +7,14 @@
 * Matériel de patch
 * Détailler les services à déservir
 
+## Attribution des tâches - 16.12.15
+
+### Groupe
+
+* Mise au clair des décisions prises par les différents pôles
+* Installation des serveurs
+* Création des schémas finaux d'architecture du service
+
 ## Attribution des tâches - 9.12.15
 
 ### Kevin Amado
