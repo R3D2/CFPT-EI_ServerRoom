@@ -50,7 +50,9 @@
 * a remplir
 
 ### LDB
+* installation de hp array utility
 * accès au serveur en ssh
+* recherche de solution pour réparé le raid 5
 * raid 5 quasiment réparé (ajout en spare => ctrl slot=0 array A add spares=allunassigned)
 
 ### KA
