@@ -50,7 +50,8 @@
 * a remplir
 
 ### LDB
-* a remplir
+* accès au serveur en ssh
+* raid 5 quasiment réparé (ajout en spare => ctrl slot=0 array A add spares=allunassigned)
 
 ### KA
 * Envoie du mail à M. Garchery pour commander la sonde de température
