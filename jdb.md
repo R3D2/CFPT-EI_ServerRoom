@@ -32,7 +32,7 @@
 * Création d'un shéma pour l'architecture des racks et serveur
 
 ### KA
-* Commande de la sonde de température sur distrelec
+* Choix de la sonde de température sur distrelec
 * Recherche des caractéristiques technique du Raspberry PI 2
 
 ### DW
@@ -53,7 +53,7 @@
 * a remplir
 
 ### KA
-* a remplir
+* Envoie du mail à M. Garchery pour commander la sonde de température
 
 ### DW
-* a remplir
+* Envoie du mail à Garchery pour commander la caméra
