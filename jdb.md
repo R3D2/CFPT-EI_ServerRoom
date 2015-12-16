@@ -39,3 +39,21 @@
 * Test Webcam du prof(iZiggi HD).
 * Recherche de caméra de Surveillance et création d'un document de comparaison.
 
+## 16.12.2015
+
+### Groupe
+* Discussion autour de l'état du projet
+* Clarification de chaque point et mises en commun du statut et des décisions prises dans chaque pôle
+* Voir PV-161215.md pour détail
+
+### SC
+* a remplir
+
+### LDB
+* a remplir
+
+### KA
+* a remplir
+
+### DW
+* a remplir
