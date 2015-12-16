@@ -47,11 +47,15 @@
 * Voir PV-161215.md pour détail
 
 ### SC
-* a remplir
+* Coach de l'installation de l'utilitaire Hewlett-Packard pour la gestion des baies du serveur
+* Conception du procés-verbal de la réunion de ce matin
+* Impossible de démarrer sur un USB sur les serveurs DELL 2850 => recherche de solution
+* Refactorisation de la solution de virtualisation à oVirt plutôt que l'installation d'un élément supplémentaire tel que Archipel...
 
 ### LDB
 * Installation de hp array utility
 * Accès au serveur en ssh
+* Conception d'un document d'adressage ip
 * Recherche de solution pour réparé le raid 5
 * Raid 5 quasiment réparé (ajout en spare => ctrl slot=0 array A add spares=allunassigned)
 
