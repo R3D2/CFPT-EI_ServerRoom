@@ -56,4 +56,4 @@
 * a remplir
 
 ### DW
-* a remplir
+* Envoie du mail à Garchery pour commander la caméra
