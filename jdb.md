@@ -75,3 +75,4 @@
 
 ### DW
 * Recherche de comment configurer un serveur ubuntu: https://doc.ubuntu-fr.org/ubuntu_server
+* Confirmation: La commande de la caméra a été faites, il ne reste plus qu'à l'attendre
