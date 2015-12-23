@@ -72,3 +72,5 @@
 * Tutoriel d'installation de serveur de versioning :
   * git : https://www.linux.com/learn/tutorials/824358-how-to-run-your-own-git-server
   * svn : http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
+### DW
+* Recherche de comment configurer un serveur ubuntu: https://doc.ubuntu-fr.org/ubuntu_server
