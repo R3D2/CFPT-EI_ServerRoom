@@ -85,3 +85,4 @@
 * Prévoir l'installation des serveurs sous Fedora
 * Rédaction de la checklist de l'installation des serveurs
 * Mises à jours du README du projet
+* Impression de la documentation de la solution
