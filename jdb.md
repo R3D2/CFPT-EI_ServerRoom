@@ -78,3 +78,10 @@
 * Confirmation: La commande de la caméra a été faites, il ne reste plus qu'à l'attendre
 
 ## 13.01.2016
+
+### SC
+* Mises à jours des contraintes du projets et planification
+* Refactorisation du projet par rapport au contrainte et au temps restant => Passage de la solution sous oVirt
+* Prévoir l'installation des serveurs sous Fedora
+* Rédaction de la checklist de l'installation des serveurs
+* Mises à jours du README du projet
