@@ -86,3 +86,7 @@
 * Rédaction de la checklist de l'installation des serveurs
 * Mises à jours du README du projet
 * Impression de la documentation de la solution
+
+### KA
+* Installation et branchement du rasbperry PI 2
+* Recherche internet sur la conversion analogique à numérique
