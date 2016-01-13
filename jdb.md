@@ -90,3 +90,7 @@
 ### KA
 * Installation et branchement du rasbperry PI 2
 * Recherche internet sur la conversion analogique à numérique
+
+### DW
+* Test d'une caméra IP preter par le prof en attendant la mienne
+* Réussite de détection de mouvement
