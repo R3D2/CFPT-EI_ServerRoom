@@ -65,4 +65,16 @@
 ### DW
 * Envoie du mail à Garchery pour commander la caméra
 
+## 23.12.2015
+
+### LDB
+* Recherche de serveur de versioning disponible sous ubuntu
+* Tutoriel d'installation de serveur de versioning :
+  * git : https://www.linux.com/learn/tutorials/824358-how-to-run-your-own-git-server
+  * svn : http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
+
+### DW
+* Recherche de comment configurer un serveur ubuntu: https://doc.ubuntu-fr.org/ubuntu_server
+* Confirmation: La commande de la caméra a été faites, il ne reste plus qu'à l'attendre
+
 ## 13.01.2016
