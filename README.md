@@ -2,10 +2,32 @@
 
 ## Problématiques restantes
 
-* Date de pose du faux sol
-* Date de pose de la fibre
+* Date de pose du faux sol => mi-janvier
+* Date de pose de la fibre => mi-janvier
 * Matériel de patch
 * Détailler les services à déservir
+
+## Attribution des tâches - 20.01.2015
+
+### Groupe
+
+* Mise en commun - Ou en somme nous ?
+
+### Loris Di Biasi
+
+* Installation de la solution sur les serveurs
+
+### Kevin Amado
+
+* Sonde de température => Documentation et finition
+
+### Dylan Wacker
+
+* WebCam => Documentation
+
+### Samuel Cardoso
+
+* Rédaction des PV et suivit des serveurs
 
 ## Attribution des tâches - 16.12.15
 
