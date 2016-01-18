@@ -7,7 +7,7 @@
 * Matériel de patch
 * Détailler les services à déservir
 
-## Attribution des tâches - 20.01.2015
+## Attribution des tâches - 20.01.16
 
 ### Groupe
 
