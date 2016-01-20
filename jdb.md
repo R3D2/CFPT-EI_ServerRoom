@@ -110,6 +110,9 @@
 * Entrevue avec le client
 * Mises à jours de la date prévu de la pose du sol
 * Mises à jours de la date prévu des fibres
+* Démantelement du serveur HS, récupération du matériel
+RAM, Carte SAS, Disque SCSI
+* Supervision Installation des serveurs
 
 ### KA
 * A remplir
