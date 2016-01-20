@@ -99,7 +99,7 @@
 * Installation d'Ubuntu sur tout les serveurs (CD intitulé 'Ubuntu' contiennent un soft pour tester la RAM)
 * Déplacement des serveurs le temps de leur installation (Fedora)
 
-## 13.01.2016
+## 20.01.2016
 
 ### Groupe
 * Mise en commun
