@@ -94,3 +94,7 @@
 ### DW
 * Test d'une caméra IP preter par le prof en attendant la mienne
 * Réussite de détection de mouvement
+
+## LDB
+* Installation d'Ubuntu sur tout les serveurs (CD intitulé 'Ubuntu' contiennent un soft pour tester la RAM)
+* Déplacement des serveurs le temps de leur installation (Fedora)
