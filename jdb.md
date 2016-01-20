@@ -98,3 +98,24 @@
 ## LDB
 * Installation d'Ubuntu sur tout les serveurs (CD intitulé 'Ubuntu' contiennent un soft pour tester la RAM)
 * Déplacement des serveurs le temps de leur installation (Fedora)
+
+## 13.01.2016
+
+### Groupe
+* Mise en commun
+* Visite de Monsieur Maréchal
+
+### SC
+* Rédaction du PV de la réunion
+* Entrevue avec le client
+* Mises à jours de la date prévu de la pose du sol
+* Mises à jours de la date prévu des fibres
+
+### KA
+* A remplir
+
+### DW
+* A remplir
+
+## LDB
+* A remplir
