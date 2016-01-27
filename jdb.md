@@ -124,3 +124,17 @@ RAM, Carte SAS, Disque SCSI
 * Installation oVirt sur un serveur en raid 5 (Impossible - Fedora 23)
 * Passage du serveur raid 5 en raid 1 (Prévu)
 * Installation de oVirt node sur les hosts (Impossible tant que hyperviseur pas fait)
+
+## 27.01.2016
+
+### SC
+* A remplir
+
+### KA
+* A remplir
+
+### DW
+* A remplir
+
+### LDB
+* A remplir
