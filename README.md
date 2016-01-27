@@ -13,7 +13,7 @@
 
 * Mise en commun - Ou en somme nous ?
 
-### Loris Di Biasi
+### Loris De Biasi
 
 * Installation de la solution sur les serveurs
 
