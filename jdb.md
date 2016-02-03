@@ -137,4 +137,20 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### LDB
+* création de raid 5 sur l'hyperviseur
+* création de raid 0 sur tout les serveurs 2 baies
+* installation de proxmox
+
+## 03.02.2016
+
+### SC
+* A remplir
+
+### KA
+* A remplir
+
+### DW
+* A remplir
+
+### LDB
 * A remplir
