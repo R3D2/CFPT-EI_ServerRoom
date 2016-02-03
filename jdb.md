@@ -150,7 +150,7 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### KA
-* Documentation
+* Documentation + planification page web
 
 ### DW
 * Création de la documentation de la caméra
