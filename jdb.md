@@ -138,7 +138,7 @@ RAM, Carte SAS, Disque SCSI
 
 ### LDB
 * création de raid 5 sur l'hyperviseur
-* création de raid 0 sur tout les serveurs 2 baies
+* création de raid 0 sur tous les serveurs 2 baies
 * installation de proxmox
 
 ## 03.02.2016
