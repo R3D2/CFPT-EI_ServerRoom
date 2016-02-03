@@ -118,7 +118,9 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### DW
-* A remplir
+* Caméra reçu, découverte de la caméra
+* Installation et compréhension de la configuration
+* Problème de serveur smtp
 
 ### LDB
 * Installation oVirt sur un serveur en raid 5 (Impossible - Fedora 23)
@@ -134,7 +136,7 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### DW
-* A remplir
+* Absent
 
 ### LDB
 * création de raid 5 sur l'hyperviseur
@@ -150,7 +152,8 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### DW
-* A remplir
+* Création de la documentation de la caméra
+* Toujours le problème du smtp
 
 ### LDB
 * A remplir
