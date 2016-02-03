@@ -131,7 +131,7 @@ RAM, Carte SAS, Disque SCSI
 ## 27.01.2016
 
 ### SC
-* A remplir
+* Supervision de la mise en place des RAID
 
 ### KA
 * Absent
@@ -147,7 +147,9 @@ RAM, Carte SAS, Disque SCSI
 ## 03.02.2016
 
 ### SC
-* A remplir
+* Ré-installation de tous les serveurs en se basant sur le 
+plan d'adressage IP.
+* Création du cluster HPVIRT
 
 ### KA
 * Documentation + planification page web
