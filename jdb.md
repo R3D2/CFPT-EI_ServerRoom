@@ -115,7 +115,8 @@ RAM, Carte SAS, Disque SCSI
 * Supervision Installation des serveurs
 
 ### KA
-* A remplir
+* Programmation de la sonde de température (pas fini)
+* Recherche sur comment programmer le raspberry PI
 
 ### DW
 * Caméra reçu, découverte de la caméra
@@ -133,7 +134,7 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### KA
-* A remplir
+* Absent
 
 ### DW
 * Absent
@@ -149,7 +150,7 @@ RAM, Carte SAS, Disque SCSI
 * A remplir
 
 ### KA
-* A remplir
+* Documentation
 
 ### DW
 * Création de la documentation de la caméra
