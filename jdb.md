@@ -159,4 +159,6 @@ plan d'adressage IP.
 * Toujours le problème du smtp
 
 ### LDB
-* A remplir
+* Ré-installation de tous les serveurs en se basant sur le 
+plan d'adressage IP.
+* Recherche de cable pour le SAS : HP External SAS Cable - 2m 389668-B21 (image SAS_Cable.png présente sur github)
