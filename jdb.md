@@ -162,3 +162,17 @@ plan d'adressage IP.
 * Ré-installation de tous les serveurs en se basant sur le 
 plan d'adressage IP.
 * Recherche de cable pour le SAS : HP External SAS Cable - 2m 389668-B21 (image SAS_Cable.png présente sur github)
+
+## 10.02.2016
+
+### SC
+* À remplir
+
+### KA
+* À remplir
+
+### DW
+* À remplir
+
+### LDB
+* Ré-installation de tous les serveurs car plan d'addressage était faux
