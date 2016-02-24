@@ -131,7 +131,7 @@ RAM, Carte SAS, Disque SCSI
 ## 27.01.2016
 
 ### SC
-* A remplir
+* Supervision de la mise en place des RAID
 
 ### KA
 * Absent
@@ -147,14 +147,32 @@ RAM, Carte SAS, Disque SCSI
 ## 03.02.2016
 
 ### SC
-* A remplir
+* Ré-installation de tous les serveurs en se basant sur le 
+plan d'adressage IP.
+* Création du cluster HPVIRT
 
 ### KA
-* Documentation
+* Documentation + planification page web
 
 ### DW
 * Création de la documentation de la caméra
 * Toujours le problème du smtp
 
 ### LDB
-* A remplir
+* Ré-installation de tous les serveurs en se basant sur le 
+plan d'adressage IP.
+* Recherche de cable pour le SAS : HP External SAS Cable - 2m 389668-B21 (image SAS_Cable.png présente sur github)
+
+## 10.02.2016
+
+### SC
+* À remplir
+
+### KA
+* À remplir
+
+### DW
+* À remplir
+
+### LDB
+* Ré-installation de tous les serveurs car plan d'addressage était faux

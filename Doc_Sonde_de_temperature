@@ -1,0 +1,33 @@
+# Sonde de température
+
+## But :
+
+* Installer un capteur de température dans une salle réseau
+
+## Liste de matériel :
+
+* Pack Raspberry PI 2
+* Cable DVI
+* Adaptateur DVI/HDMI
+* Clavier 
+* Souris
+* Sonde de température
+
+## Marche à suivre :
+
+* Commander le matériel nécessaire
+* Installer l'OS Raspbian wheezy sur la carte Micro SD à l'aide du lecteur de carte Micro SD fournis
+* Rechercher sur internet comment programmer un raspberry PI
+* Réalisé le schéma électronique
+* Branchement de la sonde de température (voir schéma électronique)
+* Programmer puis tester le Raspberry PI
+* Installer le capteur de température dans la salle réseau
+* Etablir un rapport
+
+## Problème Recontré
+
+* Installation du mauvais système d'exploitation Raspbian wheezy lite (sans interface graphique), j'ai du installer la version avec interface graphique Raspbian Wheezy.
+* Manque de connaissance sur ce sujet, j'ai du faire beaucou pde recherche sur internet.
+
+### tutoriel programmation raspberry
+* http://projects.privateeyepi.com/home/temperature-gauge
