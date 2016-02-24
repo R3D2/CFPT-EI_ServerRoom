@@ -195,12 +195,20 @@ plan d'adressage IP.
 * Supervision et analyse du travail de dashboard de Monsieur Amacker
 * Aide ajout du projet de Monsieur Amacker au github du projet principale
 * Rédaction et envoi d'un Mail à Monsieur Marechal concernant la prise murale non alimentée dans la salle serveur
-
-### DW
-* À remplir
+* Check et test du pourquoi la prise murale est down avec Monsieur Marechal
+* Rédaction et envoi d'un Mail à Monsieur Marechal avec les références du switch et numéro de la prise posant problème
+* Suite à d'autre test => Le switch cisco pose problème...
+* Installation d'un switch gigabit 8port et branchement des serveurs dessus.
 
 ### LDB
-* À remplir
+* Déménagement des serveurs présent dans la salle de classe au sous-sol
+* Installation des serveurs dans le rack
+* Installation de l'onduleur
+* Installation du switch
+* Installation du SAS
+* Cablâge des serveurs à l'alimentation
+* Cablâge des serveurs au switch
+* Rédaction de la documentation concernant l'équipement mis en place
 
 ### DW
 * Solution pour detection de mouvement trouver. Faire un ftp, enregistrer les images de detection et video dessus.Vérifier les fichiers de celui ci en php et afficher la dernière detection
