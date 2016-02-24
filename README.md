@@ -3,8 +3,8 @@
 ## Problématiques restantes
 
 * Prise murale de la salle serveur non-alimenté
-* ~~Date de pose du faux sol => mi-janvier~~
-* ~~Date de pose de la fibre => mi-janvier~~
+* ~~Date de pose du faux sol, mi-janvier~~
+* ~~Date de pose de la fibre, mi-janvier~~
 * ~~Matériel de patch~~
 * ~~Détailler les services à déservir~~
 
