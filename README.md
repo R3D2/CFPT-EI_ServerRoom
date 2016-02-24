@@ -2,10 +2,13 @@
 
 ## Problématiques restantes
 
-* Date de pose du faux sol => mi-janvier
-* Date de pose de la fibre => mi-janvier
-* Matériel de patch
-* Détailler les services à déservir
+* Prise murale de la salle serveur non-alimenté
+* ~~Date de pose du faux sol => mi-janvier~~
+* ~~Date de pose de la fibre => mi-janvier~~
+* ~~Matériel de patch~~
+* ~~Détailler les services à déservir~~
+
+## Finalisation des 
 
 ## Attribution des tâches - 20.01.16
 
