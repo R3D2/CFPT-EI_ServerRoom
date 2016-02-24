@@ -194,6 +194,7 @@ plan d'adressage IP.
 * Cablâge du SAS au serveur
 * Supervision et analyse du travail de dashboard de Monsieur Amacker
 * Aide ajout du projet de Monsieur Amacker au github du projet principale
+* Rédaction et envoi d'un Mail à Monsieur Marechal concernant la prise murale non alimentée dans la salle serveur
 
 ### DW
 * À remplir
