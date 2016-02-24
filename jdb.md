@@ -172,7 +172,7 @@ plan d'adressage IP.
 * À remplir
 
 ### DW
-* À remplir
+* Recherche de solution pour faire de la detection de mouvement
 
 ### LDB
 * Ré-installation de tous les serveurs car plan d'addressage était faux
@@ -191,3 +191,6 @@ plan d'adressage IP.
 
 ### LDB
 * À remplir
+
+### DW
+* Solution pour detection de mouvement trouver. Faire un ftp, enregistrer les images de detection et video dessus.Vérifier les fichiers de celui ci en php et afficher la dernière detection
