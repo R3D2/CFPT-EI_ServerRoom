@@ -176,3 +176,18 @@ plan d'adressage IP.
 
 ### LDB
 * Ré-installation de tous les serveurs car plan d'addressage était faux
+
+## 17.02.2016
+
+* Vacances
+
+## 24.02.2016
+
+### SC
+* À remplir
+
+### KA
+* À remplir
+
+### LDB
+* À remplir
