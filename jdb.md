@@ -184,9 +184,18 @@ plan d'adressage IP.
 ## 24.02.2016
 
 ### SC
-* À remplir
+* Déménagement des serveurs présent dans la salle de classe au sous-sol
+* Installation des serveurs dans le rack
+* Installation de l'onduleur
+* Installation du switch
+* Installation du SAS
+* Cablâge des serveurs à l'alimentation
+* Cablâge des serveurs au switch
+* Cablâge du SAS au serveur
+* Supervision et analyse du travail de dashboard de Monsieur Amacker
+* Aide ajout du projet de Monsieur Amacker au github du projet principale
 
-### KA
+### DWs
 * À remplir
 
 ### LDB
