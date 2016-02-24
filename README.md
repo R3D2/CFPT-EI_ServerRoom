@@ -8,8 +8,6 @@
 * ~~Matériel de patch~~
 * ~~Détailler les services à déservir~~
 
-## Finalisation des 
-
 ## Attribution des tâches - 20.01.16
 
 ### Groupe
