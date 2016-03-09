@@ -212,3 +212,8 @@ plan d'adressage IP.
 
 ### DW
 * Solution pour detection de mouvement trouver. Faire un ftp, enregistrer les images de detection et video dessus.Vérifier les fichiers de celui ci en php et afficher la dernière detection
+
+## 09.03.2016
+
+### SC
+* DO IT : http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/

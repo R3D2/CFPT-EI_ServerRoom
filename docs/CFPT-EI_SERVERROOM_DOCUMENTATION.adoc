@@ -1,0 +1,14 @@
+= CFPTEI_SERVEROOM
+Samuel Cardoso <s.cardoso@threeangle.ch>
+V1.0, 2016-03-09
+
+
+== Mise en place
+
+=== Proxmox 4.1 VE
+
+==== Pré-requis
+- ISO Proxmox 4.1 : http://www.proxmox.com/en/downloads
+
+==== Installation
+Pour l'installation de proxmox VE il vous est simplement nécessaire
