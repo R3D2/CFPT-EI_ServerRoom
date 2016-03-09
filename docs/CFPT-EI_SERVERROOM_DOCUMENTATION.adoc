@@ -66,9 +66,9 @@ Suivez ensuite le cours de l'installation puis redémarrez le serveur.
 [width="100%",options="header,footer"]
 |====================
 | FQDN | MODEL | SN
-| pve01.ceti.etat-ge.ch | HP DL360 G5 |
-| pve02.ceti.etat-ge.ch | HP DL360 G5 |
-| opf01.ceti.etat-ge.ch | HP DL360 G5 |
+| pve01.ceti.etat-ge.ch | HP DL360 G5 | GB87472XJ6
+| pve02.ceti.etat-ge.ch | HP DL360 G5 | GB87472XJH
+| opf01.ceti.etat-ge.ch | HP DL360 G5 | CZJ7430A26
 | NONE | HP MSA 50 |
 |====================
 
