@@ -1,14 +1,81 @@
 = CFPTEI_SERVEROOM
 Samuel Cardoso <s.cardoso@threeangle.ch>
 V1.0, 2016-03-09
+:toc:
+:numbered:
 
+== Proxmox 4.1 VE
 
-== Mise en place
-
-=== Proxmox 4.1 VE
-
-==== Pré-requis
+=== Prérequis
 - ISO Proxmox 4.1 : http://www.proxmox.com/en/downloads
 
-==== Installation
-Pour l'installation de proxmox VE il vous est simplement nécessaire
+=== Introduction
+L'installation de proxmox est composée d'un assistant graphique disposant de 5 étapes. Seul les étapes nécessitant un changement seront décrites ici. Pour procéder à l'installation, il vous suffit simplement d'insérer le CD d'installation et de démarrer sur celui-ci.
+
+=== Installation
+1. NEXT
+
+2. Il vous est possible de sélectionner un partionnement particulier procédez à votre convenance dans notre cas nous sélectionnons simplement le bon volume pour l'installation de proxmox.
+
+3. Valeurs à renseigner  
+    - Country : Switzerland
+    - Keyboard Layout : Swiss-French
+    
+4. Insérez le mot de passe choisit ainsi que l'adresse e-mail de contact de l'administrateur de ce serveur.
+
+IMPORTANT: Malgré le fait que nous ayons choisis Swiss-French le layout de l'installation ne change pas ! Celui-ci est en "US Layout". Prenez donc ceci en compte lors du renseignement du mot de passe.
+
+[start=5]
+5. Valeurs à renseigner
+
+    - Hostname :    pveXX.ceti.etat-ge.ch
+    - IP Adress :   10.134.96.XXX
+    - Netmask :     255.255.255.252
+    - Gateway :     10.134.96.1
+    - DNS Server :  160.53.226.30
+    
+IMPORTANT: Certains champ seront renseignés automatiquement, veillez à quand même contrôler les valeurs présentes !
+
+== OpenFiler
+
+=== Prérequis
+- ISO Openfiler 2.99 : http://www.openfiler.com/community/download
+- Unetbootin : https://unetbootin.github.io/
+
+=== Introduction
+Pour cette installation comme pour la précédente un assistant graphique est disponible nous couvrirons par contre la création d'une clé usb bootable car cet ainsi que le système a été installé et visiblement il diffère de l'installation standard.
+
+=== Création du Média d'installation
+Installez la version d'Unetbootin correspondant à votre système d'exploitation, lancez ensuite le programme puis cochez "Diskimage", recherchez ensuite l'ISO d'openfiler téléchargé au préalable. Sélectionnez la clé usb cible puis cliquez sur "OK".
+
+Ouvrez un explorateur de fichier et rendez-vous à la racine de votre clé USB, créez un dossier "root" à la racine puis copiez à l'intérieur de ce dossier l'iso d'openfiler. Vous ne rêvez pas. On copie bien à l'intérieur d'une clé USB bootable openfiler l'iso de celui-ci dans un dossier s'appelant "root".
+
+Vous pouvez l'insérer dans votre serveur est démarré dessus.
+
+=== Installation
+Acceptez les valeurs par défaut jusqu'à l'écran "Select Partition" sélectionnez l'attribut de votre clé USB "/dev/sda" puis remplissez le champ :
+
+    - Directory holding images : "root/"
+
+Suivez ensuite le cours de l'installation puis redémarrez le serveur.
+
+== Listing
+
+
+.Production rack
+[width="100%",options="header,footer"]
+|====================
+| FQDN | MODEL | SN
+| pve01.ceti.etat-ge.ch | HP DL360 G5 | 
+| pve02.ceti.etat-ge.ch | HP DL360 G5 |
+| opf01.ceti.etat-ge.ch | HP DL360 G5 
+|====================
+
+.Leftover material
+[width="100%",options="header,footer"]
+|====================
+| MODEL | SN
+| pve01.ceti.etat-ge.ch | HP DL360 G5 | 
+| pve02.ceti.etat-ge.ch | HP DL360 G5 |
+| opf01.ceti.etat-ge.ch | HP DL360 G5 /
+|====================
