@@ -9,6 +9,7 @@ Il a donc été nécessaire de :
 * Faire l'étude des solutions répondant au cahier des charges
 * Mettre en place ces solutions sur les serveurs
 * Mettre en place le rack informatique
+* Répondre aux problématiques se présentant durant le projet
 * Documenter le projet
 
 Ce projet a été réalisé par les techniciens en informatique du CFPT-EI :
@@ -28,6 +29,7 @@ It was therefore necessary to:
 * Make the study of solutions that meet the specifications
 * Implement these solutions on servers
 * Set up the computer rack
+* Respond to problems occurring during the project
 * Document the project
 
 This project was carried out by computer technicians of the CFPT-EI:

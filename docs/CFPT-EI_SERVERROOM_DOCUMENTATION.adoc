@@ -75,12 +75,12 @@ Suivez ensuite le cours de l'installation puis redémarrez le serveur.
 .Leftover material
 [width="100%",options="header,footer"]
 |=====================
-| NAME | MODEL | NUMBER HDD | TOTAL STORAGE
-| YAHOO_8	| DELL 	| 6 			|  876 GB ( 6 * 146GB) 	 			
-| YAHOO_1	| DELL 	| 2 			|  292 GB ( 2 * 146GB) 	 			
-| YAHOO_6	| DELL 	| 6 			|  657 GB ( 3 * 73GB  / 3 * 146GB )	
-| YAHOO_4	| DELL 	| 4 			|  656 GB ( 4 * 146GB / 2 * 36GB  ) 
-| YAHOO_5	| DELL 	| 6 			|  876 GB ( 2 * 73GB  / 4 * 146GB ) 
-| YAHOO_7	| DELL 	| 6 			|  876 GB ( 2 * 73GB  / 4 * 146GB ) 
-| YAHOO_2	| DELL 	| 3 			|  876 GB ( 1 * 73GB  / 1 * 146GB ) 
+| TYPE | NAME | MODEL | NUMBER HDD | TOTAL STORAGE
+| SERVER | YAHOO_8	| DELL 	| 6 			|  876 GB ( 6 * 146GB) 	 			
+| SERVER | YAHOO_1	| DELL 	| 2 			|  292 GB ( 2 * 146GB) 	 			
+| SERVER | YAHOO_6	| DELL 	| 6 			|  657 GB ( 3 * 73GB  / 3 * 146GB )	
+| SERVER | YAHOO_4	| DELL 	| 4 			|  656 GB ( 4 * 146GB / 2 * 36GB  ) 
+| SERVER | YAHOO_5	| DELL 	| 6 			|  876 GB ( 2 * 73GB  / 4 * 146GB ) 
+| SERVER | YAHOO_7	| DELL 	| 6 			|  876 GB ( 2 * 73GB  / 4 * 146GB ) 
+| SERVER | YAHOO_2	| DELL 	| 3 			|  876 GB ( 1 * 73GB  / 1 * 146GB ) 
 |=====================
