@@ -4,6 +4,61 @@ V1.0, 2016-03-09
 :toc:
 :numbered:
 
+= Solutions physiques
+
+== Introduction
+
+Le rack est composé de trois serveurs HP DL360 G5 et un MSA 50.
+On peut en extraire deux groupes distincts :
+
+- Le groupe "Virtualisation" qui est composé de deux serveurs HP DL360 G5.
+- Le groupe "Serveur de fichier" qui est composé d'un serveur HP DL360 G5 et d'un MSA 50.
+
+=== Groupe "Virtualisation"
+
+Ce groupe dispose de deux disques par serveur ceux-ci sont configurés en RAID 0. Ils contiennent la solution PROXMOX VE est représente un noeud de deux serveurs dans cette solution.
+
+=== Groupe "Serveur de fichiers"
+Le deuxième groupe est configuré en RAID 5 autant pour le serveur que pour le MSA. Le MSA contenant lui un disque de spare dans la baie qui s'occupera de répliquer les données d'un disque défaillant si une telle chose venait à se produire.
+
+Le serveur contient la solution OPENFILER et permet de mettre à disposition à l'ensemble du réseau les capacités de stockage du MSA.
+
+.Illustation des solutions présentes dans le rack informatique
+[ditaa,diagRackInfo,png]
+--
++-----------------------+
+|    RACK Informatique  |
+|                       |
+|    +------------------+
+|    | cBLU             |
+|    |   VIRTUALISATION |
+|    |                  |
+|    |   +--------------+
+|    |   |cPNK          |
+|    |   |     PVE01    | <--------+
+|    |   |              |          :
+|    +   +--------------+          |
+|    |   |cPNK          |          |
+|    |   |     PVE02    | <--------+  OPF01 met à disposition
+|    |   |              |          |  les ressources du MSA
+|    +---+--------------+          | 
+|    | cBLU             |          |
+|    |      SERVEUR DE  |          |
+|    |       FICHIER    |          |
+|    |                  |          |
+|    |   +--------------+          |
+|    |   |cPNK          |          :
+|    |   |     OPF01    | ---------+
+|    |   |              |
+|    +   +--------------+
+|    |   |cPNK          |
+|    |   |     MSA      |
+|    |   |              |
++----+---+--------------+
+--
+
+= Solutions logiciels
+
 == Proxmox 4.1 VE
 
 === Prérequis
@@ -59,19 +114,24 @@ Acceptez les valeurs par défaut jusqu'à l'écran "Select Partition" sélection
 
 Suivez ensuite le cours de l'installation puis redémarrez le serveur.
 
-== Listing
+== Inventaire
 
-.Production rack
+.Rack en production
 [width="100%",options="header,footer"]
 |====================
-| FQDN | MODEL | SN
-| pve01.ceti.etat-ge.ch | HP DL360 G5 | GB87472XJ6
-| pve02.ceti.etat-ge.ch | HP DL360 G5 | GB87472XJH
-| opf01.ceti.etat-ge.ch | HP DL360 G5 | CZJ7430A26
-| NONE | HP MSA 50 |
+| TYPE | FQDN | MODEL | SN
+| SERVER | pve01.ceti.etat-ge.ch | HP DL360 G5 | GB87472XJ6
+| SERVER | pve02.ceti.etat-ge.ch | HP DL360 G5 | GB87472XJH
+| SERVER | opf01.ceti.etat-ge.ch | HP DL360 G5 | CZJ7430A26
+| MSA | none |  HP MSA 50 | <empty>
+| SWITCH | none | NETGEAR | <empty>
+| SWITCH | none | CISCO | <empty>
+| SCREEN | none | <empty> | <empty>
+| MOUSE | none | Logitech | <empty>
+| Keyboard | none | Logitech | <empty>
 |====================
 
-.Leftover material
+.Matériel disponible
 [width="100%",options="header,footer"]
 |=====================
 | TYPE | NAME | MODEL | NUMBER HDD | TOTAL STORAGE
