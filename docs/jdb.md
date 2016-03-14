@@ -226,7 +226,10 @@ plan d'adressage IP.
 * DO IT : http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/
 
 ### LDB
-* A remplir !
+* (Temporaire)
+* https://unixserveradmin.wordpress.com/2014/02/10/how-to-add-cluster-or-node-in-proxmox-ve/
+* http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi
+* https://pve.proxmox.com/wiki/Storage_Model
 
 ### DW
 * A remplir !
