@@ -166,7 +166,7 @@ plan d'adressage IP.
 ## 10.02.2016
 
 ### SC
-* À remplir
+* Supervision de la réinstallation des serveurs
 
 ### KA
 * À remplir
@@ -213,7 +213,23 @@ plan d'adressage IP.
 ### DW
 * Solution pour detection de mouvement trouver. Faire un ftp, enregistrer les images de detection et video dessus.Vérifier les fichiers de celui ci en php et afficher la dernière detection
 
+### KA
+* Absent
+
 ## 09.03.2016
 
 ### SC
+* Installation d'openfiler sur le serveur
+* Ré-installation des deux proxmox
+* Mises à jours de la documentation
+* Supervision du travail restant
 * DO IT : http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/
+
+### LDB
+* A remplir !
+
+### DW
+* A remplir !
+
+### KA
+* A remplir !
