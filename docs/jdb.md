@@ -169,7 +169,8 @@ plan d'adressage IP.
 * Supervision de la réinstallation des serveurs
 
 ### KA
-* À remplir
+* Installation de MYSQL et Apache
+* Création de la base de donnée de température
 
 ### DW
 * Recherche de solution pour faire de la detection de mouvement
@@ -241,4 +242,5 @@ plan d'adressage IP.
 * A remplir !
 
 ### KA
-* A remplir !
+* Changement de sonde de température
+* élaboration du schéma électronique
