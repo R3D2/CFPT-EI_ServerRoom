@@ -1,6 +1,13 @@
 = CFPTEI_SERVEROOM
 Samuel Cardoso <s.cardoso@threeangle.ch>
 V1.0, 2016-03-09
+:encoding: utf-8
+:lang: fr
+:toc: left
+:numbered:
+
+
+
 :toc:
 :numbered:
 
