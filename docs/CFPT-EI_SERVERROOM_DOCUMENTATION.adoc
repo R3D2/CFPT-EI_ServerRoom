@@ -6,11 +6,6 @@ V1.0, 2016-03-09
 :toc: left
 :numbered:
 
-
-
-:toc:
-:numbered:
-
 = Solutions physiques
 
 == Introduction
