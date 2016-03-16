@@ -20,14 +20,22 @@
 * Rechercher sur internet comment programmer un raspberry PI
 * Réalisé le schéma électronique
 * Branchement de la sonde de température (voir schéma électronique)
-* Programmer puis tester le Raspberry PI
+* Installer Apache et MYSQL sur le raspberry
+* Créer la base de donnée avec MYSQL 
+* Créer le programme python qui va mesurer la température ambiante de la salle en ajoutant ces valeurs dans la BDD
+* Créer une page Web qui va afficher la température actuelle ainsi qu'un historique des températures.
+* Tester le Raspberry PI
 * Installer le capteur de température dans la salle réseau
 * Etablir un rapport
+
+ID MYSQL : root
+Mot de passe MYSQL : cfpt16
 
 ## Problème Recontré
 
 * Installation du mauvais système d'exploitation Raspbian wheezy lite (sans interface graphique), j'ai du installer la version avec interface graphique Raspbian Wheezy.
-* Manque de connaissance sur ce sujet, j'ai du faire beaucou pde recherche sur internet.
+* Manque de connaissance sur ce sujet, j'ai du faire beaucoup de recherche sur internet.
+* Manque un convertisseur analogique numérique pour la sonde de température commandé, nous avons donc fait le choix de sélectionné un autre capteur de température.
 
 ### tutoriel programmation raspberry
 * http://projects.privateeyepi.com/home/temperature-gauge

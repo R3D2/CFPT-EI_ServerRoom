@@ -166,13 +166,14 @@ plan d'adressage IP.
 ## 10.02.2016
 
 ### SC
-* À remplir
+* Supervision de la réinstallation des serveurs
 
 ### KA
-* À remplir
+* Installation de MYSQL et Apache
+* Création de la base de donnée de température
 
 ### DW
-* À remplir
+* Recherche de solution pour faire de la detection de mouvement
 
 ### LDB
 * Ré-installation de tous les serveurs car plan d'addressage était faux
@@ -184,10 +185,73 @@ plan d'adressage IP.
 ## 24.02.2016
 
 ### SC
-* À remplir
-
-### KA
-* À remplir
+* Déménagement des serveurs présent dans la salle de classe au sous-sol
+* Installation des serveurs dans le rack
+* Installation de l'onduleur
+* Installation du switch
+* Installation du SAS
+* Cablâge des serveurs à l'alimentation
+* Cablâge des serveurs au switch
+* Cablâge du SAS au serveur
+* Supervision et analyse du travail de dashboard de Monsieur Amacker
+* Aide ajout du projet de Monsieur Amacker au github du projet principale
+* Rédaction et envoi d'un Mail à Monsieur Marechal concernant la prise murale non alimentée dans la salle serveur
+* Check et test du pourquoi la prise murale est down avec Monsieur Marechal
+* Rédaction et envoi d'un Mail à Monsieur Marechal avec les références du switch et numéro de la prise posant problème
+* Suite à d'autre test => Le switch cisco pose problème...
+* Installation d'un switch gigabit 8port et branchement des serveurs dessus.
 
 ### LDB
-* À remplir
+* Déménagement des serveurs présent dans la salle de classe au sous-sol
+* Installation des serveurs dans le rack
+* Installation de l'onduleur
+* Installation du switch
+* Installation du SAS
+* Cablâge des serveurs à l'alimentation
+* Cablâge des serveurs au switch
+* Rédaction de la documentation concernant l'équipement mis en place
+
+### DW
+* Solution pour detection de mouvement trouver. Faire un ftp, enregistrer les images de detection et video dessus.Vérifier les fichiers de celui ci en php et afficher la dernière detection
+
+### KA
+* Absent
+
+## 09.03.2016
+
+### SC
+* Installation d'openfiler sur le serveur
+* Ré-installation des deux proxmox
+* Mises à jours de la documentation
+* Supervision du travail restant
+* DO IT : http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/
+
+### LDB
+* [Temporaire]
+* Création d'un cluster dans proxmox
+* Création d'un node et ajout des serveur sur le même node
+* Création d'un volume NFS sur openfiler
+* Partage du volume avec les autres serveurs
+* Mise en place des droits sur le volume
+* Ajout du volume openfiler sur les proxmox
+* (https://unixserveradmin.wordpress.com/2014/02/10/how-to-add-cluster-or-node-in-proxmox-ve/)
+* (http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi)
+* (https://pve.proxmox.com/wiki/Storage_Model)
+
+### DW
+* A remplir !
+
+### KA
+* Changement de sonde de température
+* élaboration du schéma électronique
+* 
+
+## 16.03.2016
+
+### SC
+* Création d'une appliance FTP
+* Création d'une applicance LAMP
+* Superivison de l'installation de la caméra
+* Superivison de la mise en place de la documentation
+* Résolution de problème concernant le RasberryPi
+* Mise en production du Dashboard créé par M. Wacker
