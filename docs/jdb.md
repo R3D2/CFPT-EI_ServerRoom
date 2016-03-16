@@ -248,10 +248,10 @@ plan d'adressage IP.
 
 ## 16.03.2016
 
-### Sc
+### SC
 * Création d'une appliance FTP
 * Création d'une applicance LAMP
 * Superivison de l'installation de la caméra
 * Superivison de la mise en place de la documentation
 * Résolution de problème concernant le RasberryPi
-* 
+* Mise en production du Dashboard créé par M. Wacker
