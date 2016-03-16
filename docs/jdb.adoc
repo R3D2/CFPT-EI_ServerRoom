@@ -1,85 +1,81 @@
-# Journal de bord
+= Journal de bord
 
-## 02.12.2015
+== 02.12.2015
 
-### Groupe
+=== Groupe
 * Visite de la salle serveur et inventaire du matériel sur place
 * Définition des contraintes et des besoins
 * Attribution des tâches : c.f Github du projet
 
-### DW/KA/LDB
+=== DW/KA/LDB
 * Etat des lieux de l'équipement de la salle serveur
 
-### SC 
+=== SC
 * Conception et Ajout de l'inventaire à liste des documents du projet par rapport à l'état des lieux fait par le reste de l'équipe.
 
-## 09.12.2015
+== 09.12.2015
 
-### Groupe
+=== Groupe
 * Définition du travail à faire
 
-### SC
+=== SC
 * Archipel - HP Proliant 
-	* Installation de Ubuntu 14.04 LTS
-	* Disk 0/2 Defect => WIP
-
+* Installation de Ubuntu 14.04 LTS* Disk 0/2 Defect => WIP
 * KVM001 - DELL
-	* Homogéinisation de la taille des disques dans la baie
-	* Clear du RAID
-	* Configuration et initialisation d'un RAID 5
+* Homogéinisation de la taille des disques dans la baie* Clear du RAID* Configuration et initialisation d'un RAID 5
 
-### LDB
+=== LDB
 * Création d'un shéma pour l'architecture des racks et serveur
 
-### KA
+=== KA
 * Choix de la sonde de température sur distrelec
 * Recherche des caractéristiques technique du Raspberry PI 2
 
-### DW
+=== DW
 * Test Webcam du prof(iZiggi HD).
 * Recherche de caméra de Surveillance et création d'un document de comparaison.
 
-## 16.12.2015
+== 16.12.2015
 
-### Groupe
+=== Groupe
+
 * Discussion autour de l'état du projet
 * Clarification de chaque point et mises en commun du statut et des décisions prises dans chaque pôle
 * Voir PV-161215.md pour détail
 
-### SC
+=== SC
 * Coach de l'installation de l'utilitaire Hewlett-Packard pour la gestion des baies du serveur
 * Conception du procés-verbal de la réunion de ce matin
 * Impossible de démarrer sur un USB sur les serveurs DELL 2850 => recherche de solution
 * Refactorisation de la solution de virtualisation à oVirt plutôt que l'installation d'un élément supplémentaire tel que Archipel...
 
-### LDB
+=== LDB
 * Installation de hp array utility
 * Accès au serveur en ssh
 * Conception d'un document d'adressage ip
 * Recherche de solution pour réparé le raid 5
 * Raid 5 quasiment réparé (ajout en spare => ctrl slot=0 array A add spares=allunassigned)
 
-### KA
+=== KA
 * Envoie du mail à M. Garchery pour commander la sonde de température
 
-### DW
+=== DW
 * Envoie du mail à Garchery pour commander la caméra
 
-## 23.12.2015
+== 23.12.2015
 
-### LDB
+=== LDB
 * Recherche de serveur de versioning disponible sous ubuntu
 * Tutoriel d'installation de serveur de versioning :
-  * git : https://www.linux.com/learn/tutorials/824358-how-to-run-your-own-git-server
-  * svn : http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/
+* git : https://www.linux.com/learn/tutorials/824358-how-to-run-your-own-git-server[https://www.linux.com/learn/tutorials/824358-how-to-run-your-own-git-server]* svn : http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/[http://www.krizna.com/ubuntu/setup-svn-server-on-ubuntu-14-04/]
 
-### DW
-* Recherche de comment configurer un serveur ubuntu: https://doc.ubuntu-fr.org/ubuntu_server
+=== DW
+* Recherche de comment configurer un serveur ubuntu: https://doc.ubuntu-fr.org/ubuntu_server[https://doc.ubuntu-fr.org/ubuntu_server]
 * Confirmation: La commande de la caméra a été faites, il ne reste plus qu'à l'attendre
 
-## 13.01.2016
+== 13.01.2016
 
-### SC
+=== SC
 * Mises à jours des contraintes du projets et planification
 * Refactorisation du projet par rapport au contrainte et au temps restant => Passage de la solution sous oVirt
 * Prévoir l'installation des serveurs sous Fedora
@@ -87,104 +83,101 @@
 * Mises à jours du README du projet
 * Impression de la documentation de la solution
 
-### KA
+=== KA
 * Installation et branchement du rasbperry PI 2
 * Recherche internet sur la conversion analogique à numérique
 
-### DW
+=== DW
 * Test d'une caméra IP preter par le prof en attendant la mienne
 * Réussite de détection de mouvement
 
-### LDB
+=== LDB
+
 * Installation d'Ubuntu sur tout les serveurs (CD intitulé 'Ubuntu' contiennent un soft pour tester la RAM)
 * Déplacement des serveurs le temps de leur installation (Fedora)
 
-## 20.01.2016
+== 20.01.2016
 
-### Groupe
+=== Groupe
 * Mise en commun
 * Visite de Monsieur Maréchal
 
-### SC
+=== SC
 * Rédaction du PV de la réunion
 * Entrevue avec le client
 * Mises à jours de la date prévu de la pose du sol
 * Mises à jours de la date prévu des fibres
-* Démantelement du serveur HS, récupération du matériel
-RAM, Carte SAS, Disque SCSI
+* Démantelement du serveur HS, récupération du matérielRAM, Carte SAS, Disque SCSI
 * Supervision Installation des serveurs
 
-### KA
+=== KA
 * Programmation de la sonde de température (pas fini)
 * Recherche sur comment programmer le raspberry PI
 
-### DW
+=== DW
 * Caméra reçu, découverte de la caméra
 * Installation et compréhension de la configuration
 * Problème de serveur smtp
 
-### LDB
+=== LDB
 * Installation oVirt sur un serveur en raid 5 (Impossible - Fedora 23)
 * Passage du serveur raid 5 en raid 1 (Prévu)
 * Installation de oVirt node sur les hosts (Impossible tant que hyperviseur pas fait)
 
-## 27.01.2016
+== 27.01.2016
 
-### SC
+=== SC
 * Supervision de la mise en place des RAID
 
-### KA
+=== KA
 * Absent
 
-### DW
+=== DW
 * Absent
 
-### LDB
+=== LDB
 * création de raid 5 sur l'hyperviseur
 * création de raid 0 sur tous les serveurs 2 baies
 * installation de proxmox
 
-## 03.02.2016
+== 03.02.2016
 
-### SC
-* Ré-installation de tous les serveurs en se basant sur le 
-plan d'adressage IP.
+=== SC
+* Ré-installation de tous les serveurs en se basant sur le plan d'adressage IP.
 * Création du cluster HPVIRT
 
-### KA
+=== KA
 * Documentation + planification page web
 
-### DW
+=== DW
 * Création de la documentation de la caméra
 * Toujours le problème du smtp
 
-### LDB
-* Ré-installation de tous les serveurs en se basant sur le 
-plan d'adressage IP.
+=== LDB
+* Ré-installation de tous les serveurs en se basant sur le plan d'adressage IP.
 * Recherche de cable pour le SAS : HP External SAS Cable - 2m 389668-B21 (image SAS_Cable.png présente sur github)
 
-## 10.02.2016
+== 10.02.2016
 
-### SC
+=== SC
 * Supervision de la réinstallation des serveurs
 
-### KA
+=== KA
 * Installation de MYSQL et Apache
 * Création de la base de donnée de température
 
-### DW
+=== DW
 * Recherche de solution pour faire de la detection de mouvement
 
-### LDB
+=== LDB
 * Ré-installation de tous les serveurs car plan d'addressage était faux
 
-## 17.02.2016
-
+== 17.02.2016
 * Vacances
 
-## 24.02.2016
+== 24.02.2016
 
-### SC
+=== SC
 * Déménagement des serveurs présent dans la salle de classe au sous-sol
 * Installation des serveurs dans le rack
 * Installation de l'onduleur
@@ -201,7 +194,7 @@ plan d'adressage IP.
 * Suite à d'autre test => Le switch cisco pose problème...
 * Installation d'un switch gigabit 8port et branchement des serveurs dessus.
 
-### LDB
+=== LDB
 * Déménagement des serveurs présent dans la salle de classe au sous-sol
 * Installation des serveurs dans le rack
 * Installation de l'onduleur
@@ -211,22 +204,22 @@ plan d'adressage IP.
 * Cablâge des serveurs au switch
 * Rédaction de la documentation concernant l'équipement mis en place
 
-### DW
+=== DW
 * Solution pour detection de mouvement trouver. Faire un ftp, enregistrer les images de detection et video dessus.Vérifier les fichiers de celui ci en php et afficher la dernière detection
 
-### KA
+=== KA
 * Absent
 
-## 09.03.2016
+== 09.03.2016
 
-### SC
+=== SC
 * Installation d'openfiler sur le serveur
 * Ré-installation des deux proxmox
 * Mises à jours de la documentation
 * Supervision du travail restant
-* DO IT : http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/
+* DO IT : http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/[http://www.pihomeserver.fr/2013/10/29/raspberry-pi-home-server-utiliser-sonde-temperature-etanche-ds18b20/]
 
-### LDB
+=== LDB
 * [Temporaire]
 * Création d'un cluster dans proxmox
 * Création d'un node et ajout des serveur sur le même node
@@ -234,21 +227,20 @@ plan d'adressage IP.
 * Partage du volume avec les autres serveurs
 * Mise en place des droits sur le volume
 * Ajout du volume openfiler sur les proxmox
-* (https://unixserveradmin.wordpress.com/2014/02/10/how-to-add-cluster-or-node-in-proxmox-ve/)
-* (http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi)
-* (https://pve.proxmox.com/wiki/Storage_Model)
+* (https://unixserveradmin.wordpress.com/2014/02/10/how-to-add-cluster-or-node-in-proxmox-ve/[https://unixserveradmin.wordpress.com/2014/02/10/how-to-add-cluster-or-node-in-proxmox-ve/])
+* (http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi[http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi])
+* (https://pve.proxmox.com/wiki/Storage_Model[https://pve.proxmox.com/wiki/Storage_Model])
 
-### DW
+=== DW
 * A remplir !
 
-### KA
+=== KA
 * Changement de sonde de température
-* élaboration du schéma électronique
-* 
+* Élaboration du schéma électronique
 
-## 16.03.2016
+== 16.03.2016
 
-### SC
+=== SC
 * Création d'une appliance FTP
 * Création d'une applicance LAMP
 * Superivison de l'installation de la caméra
@@ -256,7 +248,7 @@ plan d'adressage IP.
 * Résolution de problème concernant le RasberryPi
 * Mise en production du Dashboard créé par M. Wacker
 
-### LDB
+=== LDB
 * Avancement de la documentation
 * Récuperation de tous les numéro de série
 * Mise en place de la caméra sur un serveur
