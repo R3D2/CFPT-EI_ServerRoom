@@ -255,3 +255,8 @@ plan d'adressage IP.
 * Superivison de la mise en place de la documentation
 * Résolution de problème concernant le RasberryPi
 * Mise en production du Dashboard créé par M. Wacker
+
+### LDB
+* Avancement de la documentation
+* Récuperation de tous les numéro de série
+* Mise en place de la caméra sur un serveur
