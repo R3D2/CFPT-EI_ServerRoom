@@ -231,12 +231,12 @@ plan d'adressage IP.
 * Création d'un cluster dans proxmox
 * Création d'un node et ajout des serveur sur le même node
 * Création d'un volume NFS sur openfiler
-* partage du volume avec les autres serveurs
-* mise en place des droits sur le volume
-* ajout du volume openfiler sur les proxmox
+* Partage du volume avec les autres serveurs
+* Mise en place des droits sur le volume
+* Ajout du volume openfiler sur les proxmox
 * (https://unixserveradmin.wordpress.com/2014/02/10/how-to-add-cluster-or-node-in-proxmox-ve/)
-* http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi
-* https://pve.proxmox.com/wiki/Storage_Model
+* (http://www.vmwarebits.com/content/install-and-configure-openfiler-esxi-shared-storage-nfs-and-iscsi)
+* (https://pve.proxmox.com/wiki/Storage_Model)
 
 ### DW
 * A remplir !
