@@ -1,7 +1,7 @@
 = CFPTEI_SERVEROOM
-Samuel Cardoso <s.cardoso@threeangle.ch>;Loris Debiasi <loris.debiasi@gmail.com>
+Loris De_Biasi <loris.debiasi@gmail.com>;Samuel Cardoso <s.cardoso@threeangle.ch>
 V1.0, 2016-03-09
-:doctype: book
+:doctype: article
 :encoding: utf-8
 :lang: fr
 :toc: left
@@ -29,35 +29,35 @@ Le serveur contient la solution OPENFILER et permet de mettre à disposition à 
 .Illustration des solutions présentes dans le rack informatique
 [ditaa,diagRackInfo,png]
 --
-+-----------------------+
-|    RACK Informatique  |
-|                       |
-|    +------------------+
-|    | cBLU             |
-|    |   VIRTUALISATION |
-|    |                  |
-|    |   +--------------+
-|    |   |cPNK          |
-|    |   |     PVE01    | <--------+
-|    |   |              |          :
-|    +   +--------------+          |
-|    |   |cPNK          |          |
-|    |   |     PVE02    | <--------+  OPF01 met à disposition
-|    |   |              |          |  les ressources du MSA
-|    +---+--------------+          | 
-|    | cBLU             |          |
-|    |      SERVEUR DE  |          |
-|    |       FICHIER    |          |
-|    |                  |          |
-|    |   +--------------+          |
-|    |   |cPNK          |          :
-|    |   |     OPF01    | ---------+
-|    |   |              |
-|    +   +--------------+
-|    |   |cPNK          |
-|    |   |     MSA      |
-|    |   |              |
-+----+---+--------------+
++------------------------+
+|    RACK Informatique   |
+|                        |
+|    +-------------------+
+|    | cBLU              |
+|    |   VIRTUALISATION  |
+|    |                   |
+|    |    +--------------+
+|    |    |cPNK          |
+|    |    |     PVE01    | <--------+
+|    |    |              |          :
+|    +    +--------------+          |
+|    |    |cPNK          |          |
+|    |    |     PVE02    | <--------+  OPF01 met à disposition
+|    |    |              |          |  les ressources du MSA
+|    +----+--------------+          | 
+|    | cBLU              |          |
+|    |      SERVEUR DE   |          |
+|    |       FICHIER     |          |
+|    |                   |          |
+|    |    +--------------+          |
+|    |    |cPNK          |          :
+|    |    |     OPF01    | ---------+
+|    |    |              |
+|    +    +--------------+
+|    |    |cPNK          |
+|    |    |     MSA      |
+|    |    |              |
++----+----+--------------+
 --
 
 === Raspberry PI - Sonde de Température
@@ -70,13 +70,51 @@ Le serveur contient la solution OPENFILER et permet de mettre à disposition à 
 
 < à remplir >
 
-==== Installation de l'environnement python
-
-< à remplir >
-
 ==== Script
 
-< à remplir >
+Une tâche planifié (cron) est crée sur le raspberry pi, celle-ci nous
+permet de récupérer la température ambiente tous les X temps donnés et d'envoyer
+ces données sur un FTP pour qu'on puisse l'afficher sur l'interface de gestion
+de la salle serveur.
+
+[source,bash,numbered]
+---------------------------------
+#!/bin/bash
+
+#
+# KEVIN AMADO
+# Script créant un fichier avec les données
+# de température de la sonde
+#
+# SAMUEL CARDOSO
+# Optimisation du script
+# Ajout de l'envoi du fichier vers un FTP
+#
+# CFPT-EI - 2016
+#
+
+#/SC/ Initialisation
+HOST="10.134.96.205" 	# FTP HOST
+USER="camera"			# FTP USERNAME
+PASSWD="camera"			# FTP PASSWORD
+FILE="temperature.txt"  # FILE TO CREATE AND SEND
+PATH="/tmp/"			# FTP PATH
+
+#/KA/ Suppresion du fichier
+#/SC/ Suppression du fichier si celui-ci existe
+if [ -e $FILE ]
+then
+	rm $FILE
+fi
+
+#/KA/ Récupération des données de température de la sonde
+# et création d'un fichier contenant celle-ci
+sudo ./AdafruitDHT.py 22 22 > $FILE
+
+#/SC/ Envoie le fichier définit dans la variable FILE à l'hôte définit
+# dans la variable HOST dans le répertoire définit dans la variable PATH 
+scp $FILE $USER@$HOST:$PATH
+---------------------------------
 
 == Solutions logiciels
 
@@ -130,7 +168,7 @@ Connectez vous sur l'interface web de proxmox puis cliquez sur "Storage" et "Add
 
     - ID : NomDeVotreServeur
     - Server : IpDeVotreServeur
-    - Export : selectionner le volume
+    - Export : sélectionner le volume
 
 === OpenFiler
 

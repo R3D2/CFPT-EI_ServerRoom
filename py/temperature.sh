@@ -14,10 +14,10 @@
 
 #/SC/ Initialisation
 HOST="10.134.96.205" 	# FTP HOST
-USER='camera'			# FTP USERNAME
-PASSWD='camera'			# FTP PASSWORD
-FILE='temperature.txt'  # FILE TO CREATE AND SEND
-PATH='/tmp/'			# FTP PATH
+USER="camera"			# FTP USERNAME
+PASSWD="camera"			# FTP PASSWORD
+FILE="temperature.txt"  # FILE TO CREATE AND SEND
+PATH="/tmp/"			# FTP PATH
 
 #/KA/ Suppresion du fichier
 #/SC/ Suppression du fichier si celui-ci existe
