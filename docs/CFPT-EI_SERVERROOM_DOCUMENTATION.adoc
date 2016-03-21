@@ -1,6 +1,7 @@
 = CFPTEI_SERVEROOM
 Samuel Cardoso <s.cardoso@threeangle.ch>;Loris Debiasi <loris.debiasi@gmail.com>
 V1.0, 2016-03-09
+:doctype: book
 :encoding: utf-8
 :lang: fr
 :toc: left
@@ -25,7 +26,7 @@ Le deuxième groupe est configuré en RAID 5 autant pour le serveur que pour le 
 
 Le serveur contient la solution OPENFILER et permet de mettre à disposition à l'ensemble du réseau les capacités de stockage du MSA.
 
-.Illustation des solutions présentes dans le rack informatique
+.Illustration des solutions présentes dans le rack informatique
 [ditaa,diagRackInfo,png]
 --
 +-----------------------+
