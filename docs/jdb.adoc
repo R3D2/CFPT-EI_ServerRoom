@@ -252,3 +252,6 @@
 * Avancement de la documentation
 * Récuperation de tous les numéro de série
 * Mise en place de la caméra sur un serveur
+
+=== KA
+* Sonde de température fonctionnel
