@@ -64,8 +64,38 @@ Le serveur contient la solution OPENFILER et permet de mettre à disposition à 
 
 ==== Installation
 
-< à remplir >
+* Récupéeration de Raspbian
 
+Pour commencer il faut télécharger l'image la plus récente de Raspbian 
+à partir de leur site officiel de Raspberry Pi. Sélectionner RASPBIAN JESSIE
+
+* Préparation de la carte SD 
+Il existe un utilitaire proposé sur le site raspberrypi.org. Télécharger et installer Win32DiskImager.
+
+Lancer Win32DiskImager sélectionner le fichier précédement téléchargé et cliquer sur enregistrer et write.
+
+* Mise en route du Raspberry PI
+
+Connecter la carte SD, le calvier, la souris, l'écran, le cable ethernet et après cela alimenter le circuit.
+
+Après que le raspberry est démarré (~30 secondes), le système demande des identifiants.
+Le login par défaut est "pi", et le pasword est "raspberry". (Attention le calvier est configuré en QWERTY)
+
+Si vous voulez reconfigurer par exemple le clavier ou la langue du système vous pouvez utiliser l'interface.
+Pour faire apparaître l'interface permettant de faire des choix de configuration, il faut tapper la commande : 
+
+sudo raspi-config
+
+Pour mettre a jour le système et le redémarré, il faut tapper la commande :
+
+sudo aptitude update -y && sudo aptitude upgrade -y && sudo reboot
+
+Pour lancer l'interface graphique, il faut tapper la commande :
+
+sudo startx
+
+Fin de l'installation du raspberry PI.
+ 
 ==== Schéma électrique
 
 < à remplir >
