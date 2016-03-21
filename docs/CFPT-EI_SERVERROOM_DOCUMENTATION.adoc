@@ -1,14 +1,14 @@
 = CFPTEI_SERVEROOM
-Samuel Cardoso <s.cardoso@threeangle.ch>, Loris De Biasi <loris.debiasi@gmail.com>
+Samuel Cardoso <s.cardoso@threeangle.ch>;Loris Debiasi <loris.debiasi@gmail.com>
 V1.0, 2016-03-09
 :encoding: utf-8
 :lang: fr
 :toc: left
 :numbered:
 
-= Solutions physiques
+== Solutions physiques
 
-== Introduction
+=== Introduction
 
 Le rack est composé de trois serveurs HP DL360 G5 et un MSA 50.
 On peut en extraire deux groupes distincts :
@@ -59,17 +59,35 @@ Le serveur contient la solution OPENFILER et permet de mettre à disposition à 
 +----+---+--------------+
 --
 
-= Solutions logiciels
+=== Raspberry PI - Sonde de Température
 
-== Proxmox 4.1 VE
+==== Installation
 
-=== Prérequis
+< à remplir >
+
+==== Schéma électrique
+
+< à remplir >
+
+==== Installation de l'environnement python
+
+< à remplir >
+
+==== Script
+
+< à remplir >
+
+== Solutions logiciels
+
+=== Proxmox 4.1 VE
+
+==== Prérequis
 - ISO Proxmox 4.1 : http://www.proxmox.com/en/downloads
 
-=== Introduction
+==== Introduction
 L'installation de proxmox est composée d'un assistant graphique disposant de 5 étapes. Seul les étapes nécessitant un changement seront décrites ici. Pour procéder à l'installation, il vous suffit simplement d'insérer le CD d'installation et de démarrer sur celui-ci.
 
-=== Installation
+==== Installation
 1. NEXT
 
 2. Il vous est possible de sélectionner un partionnement particulier procédez à votre convenance dans notre cas nous sélectionnons simplement le bon volume pour l'installation de proxmox.
@@ -93,7 +111,7 @@ IMPORTANT: Malgré le fait que nous ayons choisis Swiss-French le layout de l'in
 
 IMPORTANT: Certains champ seront renseignés automatiquement, veillez à quand même contrôler les valeurs présentes !
 
-=== Création du cluster
+==== Création du cluster
 
 .Liste des serveurs
 [width="50%",options="header"]
@@ -106,46 +124,46 @@ IMPORTANT: Certains champ seront renseignés automatiquement, veillez à quand m
 
 Pour commencer, connectez vous en ssh au proxmox sur lequel vous souhaitez créer le cluster (dans notre cas, PVE01). Vous pouvez également utiliser le pvecm (Proxmox Virtual Environment cluster manager) du proxmox en utilisant l'interface web. Il vous suffit maintenant simplement d'écrire **"pvecm create node-1"**. Lorsque cela est fini, connectez vous en ssh sur un des serveurs que vous souhaitez rajouter au cluster et écrivez *"pvecm add IpPVE01"* (Ex. : pvecm add 10.134.96.201), effectuer cela pour tous les serveurs que vous souhaitez rajouter. Pour vérifier que votre cluster ce soit bien crée, connectez vous en ssh sur votre première machine et écrivez **"pvecm nodes"**, cela vous affichera toutes les machines qui sont dans votre cluster. Si vous avez fait une erreur et que vous souhaitez effacer une machine du cluster connectez vous sur la machine sur laquelle vous avez créé le cluster et écrivez **"pvecm delnode node-NuméroDuNode"** (Ex. : pvecm delnode node-2), vous trouverez le numéro du node en effectuer la commande **"pvecm nodes"**.
 
-==== Ajout du volume OpenFiler
+===== Ajout du volume OpenFiler
 Connectez vous sur l'interface web de proxmox puis cliquez sur "Storage" et "Add", sélectionner "NFS" et renseigner les valeurs qui sont en rouge.
 
     - ID : NomDeVotreServeur
     - Server : IpDeVotreServeur
     - Export : selectionner le volume
 
-== OpenFiler
+=== OpenFiler
 
-=== Prérequis
+==== Prérequis
 - ISO Openfiler 2.99 : http://www.openfiler.com/community/download
 - Unetbootin : https://unetbootin.github.io/
 
-=== Introduction
+==== Introduction
 Pour cette installation comme pour la précédente un assistant graphique est disponible nous couvrirons par contre la création d'une clé usb bootable car cet ainsi que le système a été installé et visiblement il diffère de l'installation standard.
 
-=== Création du Média d'installation
+==== Création du Média d'installation
 Installez la version d'Unetbootin correspondant à votre système d'exploitation, lancez ensuite le programme puis cochez "Diskimage", recherchez ensuite l'ISO d'openfiler téléchargé au préalable. Sélectionnez la clé usb cible puis cliquez sur "OK".
 
 Ouvrez un explorateur de fichier et rendez-vous à la racine de votre clé USB, créez un dossier "root" à la racine puis copiez à l'intérieur de ce dossier l'iso d'openfiler. Vous ne rêvez pas. On copie bien à l'intérieur d'une clé USB bootable openfiler l'iso de celui-ci dans un dossier s'appelant "root".
 
 Vous pouvez l'insérer dans votre serveur est démarré dessus.
 
-=== Installation
+==== Installation
 Acceptez les valeurs par défaut jusqu'à l'écran "Select Partition" sélectionnez l'attribut de votre clé USB "/dev/sda" puis remplissez le champ :
 
     - Directory holding images : "root/"
 
 Suivez ensuite le cours de l'installation puis redémarrez le serveur.
 
-=== Configuration de OpenFiler
+==== Configuration de OpenFiler
 Pour commencer, rendez-vous sur la page web de votre OpenFiler en https (le port de connexion est : **446**). Lorsque vous êtes sur votre OpenFiler, la première chose à faire est d'activer les services que nous allons utiliser. Dans notre cas nous avons seulement utilisé **NFS**.
 
-==== Activation des services
+===== Activation des services
 Rendez-vous dans l'onglet "Services" et activé **"NFS Server"**, s'il ne démarre pas faite le manuellement en cliquant sur le bouton de gauche.
 
-==== Limiter l'accés à l'OpenFiler
+===== Limiter l'accés à l'OpenFiler
 Maintenant vous pouvez, si vous le souhaitez, limiter l'accès a votre OpenFiler. Pour cela, rendez-vous dans l'onglet **"System"** et tout en bas dans la partie **"Network Access Configuration"** vous pouvez ajouter les machines auxquelles vous souhaitez permettre l'accès puis cliquer sur **"Update"** (Ex. : PVE01 / 10.134.96.201 / 255.255.255.0 / Share)
 
-==== Création d'un volume
+===== Création d'un volume
 Pour créer une partition rendez-vous dans l'onglet **"Volumes"**, puis à droite sélectionner "Block Devices". Vous devriez normalement voir un tableau où tous vos disques sont présents, cliquez sur le lien en dessous de "Edit Disk" à côté du disque dans lequel vous voulez créer une partition. Vous devriez maintenant voir un graphique en secteur, descendez et dans la catégorie **"Create a partition in /dev/..."** vous pouvez créer une partition.
 
 Valeurs à renseigner
@@ -157,7 +175,7 @@ Valeurs à renseigner
     
 Faite cela pour tous vos disque.
 
-==== Configuration d'un volume NFS
+===== Configuration d'un volume NFS
 Il ne reste maintenant plus qu'à configurer le/les volume(s). Pour cela rendez-vous dans l'onglet **"Volumes"** puis dans le menu de droite sélectionner **"Volume Groups"**. Pour commencer il faut en créer un puisqu'il n'y en a pas par défaut.
 
 Valeurs à renseigner
@@ -172,7 +190,7 @@ Puis cliquer sur **"Add volume group"**. Normalement vous devrez entrer d'autre 
     - Required Space : MAX
     - Filesystem / Volume type : XFS
     
-==== Création d'un partage
+===== Création d'un partage
 Tout d'abord, cliquer sur **"Shares"** puis cliquer sur le lien **"NFS volume 1"**, une pop-up devrais s'ouvrir, donner un nom a votre dossier (Ex. : data) puis cliqué sur **"Create Sub-folder"**. Après avoir fait cela, cliquer sur le dossier que vous venez de créer puis cliquer sur le bouton **"Make Share"**. Si vous descendez maintenant il vous faut changer deux choses, premièrement aller dans **"Group access configuration"** et à la ligne **"desktop_admin_r"**, cocher **"PG"** et **"RW"** puis cliquer sur update. Finalement, dans **"Host access configuration (/mnt/...)"**, cocher **"RW"** pour donner les droits d'écriture a vos serveurs puis **"Update"**.
 
 == Inventaire
