@@ -105,8 +105,8 @@ sudo startx
 
 ===== Prérequis
  - Plaque d'essaie
- - DHT22 (capteur de temperature)
- - Plusieurs cable pour les connections
+ - DHT22 (capteur de température)
+ - Plusieurs câbles pour les connections
  - Une Résistance 4k7
  
 ===== Installation
