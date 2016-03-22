@@ -116,14 +116,23 @@ sudo apt-get install python-dev
 Installer le paquet : pour récupéré la température
 
 wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.36.tar.gz
+
 tar -xzf bcm2835-1.36.tar.gz
+
 rm bcm2835-1.36.tar.gz
+
 cd bcm2835-1.36
+
 ./configure
+
 make
+
 sudo make check
+
 sudo make install
+
 cd Adafruit-Raspberry-Pi-Python-Code/Adafruit_DHT_Driver_Python
+
 python setup.py build
 
 Lancer l'executable suivi du N° du port (22) dans lequel la sonde est branché
