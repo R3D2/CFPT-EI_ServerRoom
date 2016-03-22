@@ -13,24 +13,28 @@
 #
 
 #/SC/ Initialisation
-HOST="10.134.96.205" 	# FTP HOST
+HOST="10.134.96.205" 		# FTP HOST
 USER="camera"			# FTP USERNAME
 PASSWD="camera"			# FTP PASSWORD
-FILE="temperature.txt"  # FILE TO CREATE AND SEND
-PATH="/tmp/"			# FTP PATH
+FILE="temperature.txt"  	# FILE TO CREATE AND SEND
+PATH="/home/camera/tmp/"	# FTP PATH
 
 #/KA/ Suppresion du fichier
 #/SC/ Suppression du fichier si celui-ci existe
 if [ -e $FILE ]
 then
-	rm $FILE
+	/bin/rm $FILE
 fi
 
 #/KA/ Récupération des données de température de la sonde
 # et création d'un fichier contenant celle-ci
-sudo ./AdafruitDHT.py 22 22 > $FILE
+/usr/bin/sudo ./AdafruitDHT.py 22 22 > $FILE
+
+#/SC/ Changement des droits sur le fichier créer
+/usr/bin/sudo /bin/chmod a+x $FILE
 
 #/SC/ Envoie le fichier définit dans la variable FILE, à l'hôte définit
 # dans la variable HOST, dans le répertoire définit dans la variable PATH 
-scp $FILE $USER@$HOST:$PATH
+#/usr/bin/scp $FILE $USER@$HOST:$PATH
 
+/usr/bin/sshpass -p $PASSWD /usr/bin/scp -r $FILE $USER@$HOST:$PATH
