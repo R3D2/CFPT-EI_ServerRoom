@@ -28,7 +28,7 @@ fi
 
 #/KA/ Récupération des données de température de la sonde
 # et création d'un fichier contenant celle-ci
-/usr/bin/sudo ./AdafruitDHT.py 22 22 > $FILE
+/usr/bin/sudo python /home/pi/Desktop/AdafruitDHT.py 22 22 > $FILE
 
 #/SC/ Changement des droits sur le fichier créer
 /usr/bin/sudo /bin/chmod a+x $FILE
