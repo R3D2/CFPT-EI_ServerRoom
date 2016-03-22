@@ -30,7 +30,7 @@ fi
 # et création d'un fichier contenant celle-ci
 sudo ./AdafruitDHT.py 22 22 > $FILE
 
-#/SC/ Envoie le fichier définit dans la variable FILE à l'hôte définit
-# dans la variable HOST dans le répertoire définit dans la variable PATH 
+#/SC/ Envoie le fichier définit dans la variable FILE, à l'hôte définit
+# dans la variable HOST, dans le répertoire définit dans la variable PATH 
 scp $FILE $USER@$HOST:$PATH
 
