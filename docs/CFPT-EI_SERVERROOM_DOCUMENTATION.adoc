@@ -94,7 +94,39 @@ Pour lancer l'interface graphique, il faut tapper la commande :
 
 sudo startx
 
+Installer apache2
+
 Fin de l'installation du raspberry PI.
+
+* Capteur de temperature
+
+Matériel nécessaire pour le capteur de température :
+
+ - Plaque d'essaie
+ - DHT22 (capteur de temperature)
+ - Plusieurs cable pour les connections
+ - Une Résistance 4k7
+ 
+Réalisé le schéma comme le schéma électrique
+ 
+Installer python-dev
+
+sudo apt-get install python-dev
+
+Installer le paquet : pour récupéré la température
+
+wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.36.tar.gz
+tar -xzf bcm2835-1.36.tar.gz
+rm bcm2835-1.36.tar.gz
+cd bcm2835-1.36
+./configure
+make
+sudo make check
+sudo make install
+cd Adafruit-Raspberry-Pi-Python-Code/Adafruit_DHT_Driver_Python
+python setup.py build
+
+Lancer l'executable suivi du N° du port (22) dans lequel la sonde est branché
  
 ==== Schéma électrique
 
