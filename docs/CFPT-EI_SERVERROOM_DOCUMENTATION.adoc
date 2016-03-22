@@ -1,5 +1,5 @@
 = CFPTEI_SERVEROOM
-Loris De_Biasi <loris.debiasi@gmail.com>;Samuel Cardoso <s.cardoso@threeangle.ch>
+Loris De_Biasi LDB <loris.debiasi@gmail.com>;Samuel Cardoso SC <s.cardoso@threeangle.ch>; Kevin Amado KA <k.amado@email.com>; Dylan Wacker DW <d.wacker@email.com>
 V1.0, 2016-03-09
 :doctype: article
 :encoding: utf-8
@@ -62,84 +62,80 @@ Le serveur contient la solution OPENFILER et permet de mettre à disposition à 
 
 === Raspberry PI - Sonde de Température
 
+==== Prérequis
+- Carte micro-SD
+- Raspbian JESSIE : https://www.raspberrypi.org/downloads/raspbian/
+- Win32 DiskImager : https://sourceforge.net/projects/win32diskimager/
+
 ==== Installation
 
-* Récupéeration de Raspbian
+1. Préparation de la carte SD 
+Lancez Win32DiskImager sélectionner le fichier précédemment téléchargé et cliquer sur enregistrer et write.
 
-Pour commencer il faut télécharger l'image la plus récente de Raspbian 
-à partir de leur site officiel de Raspberry Pi. Sélectionner RASPBIAN JESSIE
+3. Mise en route du Raspberry PI
 
-* Préparation de la carte SD 
-Il existe un utilitaire proposé sur le site raspberrypi.org. Télécharger et installer Win32DiskImager.
-
-Lancer Win32DiskImager sélectionner le fichier précédement téléchargé et cliquer sur enregistrer et write.
-
-* Mise en route du Raspberry PI
-
-Connecter la carte SD, le calvier, la souris, l'écran, le cable ethernet et après cela alimenter le circuit.
+Connectez la carte SD, le clavier, la souris, l'écran, le câble Ethernet et après cela alimenter le circuit.
 
 Après que le raspberry est démarré (~30 secondes), le système demande des identifiants.
-Le login par défaut est "pi", et le pasword est "raspberry". (Attention le calvier est configuré en QWERTY)
+Le login par défaut est "pi", et le pasword est "raspberry". (Attention le clavier est configuré en QWERTY)
 
 Si vous voulez reconfigurer par exemple le clavier ou la langue du système vous pouvez utiliser l'interface.
-Pour faire apparaître l'interface permettant de faire des choix de configuration, il faut tapper la commande : 
+Pour faire apparaître l'interface permettant de faire des choix de configuration, il faut taper la commande : 
 
+[source,bash]
+----
 sudo raspi-config
+----
 
-Pour mettre a jour le système et le redémarré, il faut tapper la commande :
+Pour mettre a jour le système et le redémarré, il faut taper la commande :
 
+[source,bash]
+----
 sudo aptitude update -y && sudo aptitude upgrade -y && sudo reboot
+----
 
-Pour lancer l'interface graphique, il faut tapper la commande :
+Pour lancer l'interface graphique, il faut taper la commande :
 
+[source, bash]
+----
 sudo startx
+----
 
-Installer apache2
+==== Capteur de température
 
-Fin de l'installation du raspberry PI.
-
-* Capteur de temperature
-
-Matériel nécessaire pour le capteur de température :
-
+===== Prérequis
  - Plaque d'essaie
- - DHT22 (capteur de temperature)
- - Plusieurs cable pour les connections
+ - DHT22 (capteur de température)
+ - Plusieurs câbles pour les connections
  - Une Résistance 4k7
  
-Réalisé le schéma comme le schéma électrique
+===== Installation
  
-Installer python-dev
+1. Suivez le schéma électrique (c.f figure 2)
+2. Installer python-dev
 
+[source, bash]
+----
 sudo apt-get install python-dev
 
-Installer le paquet : pour récupéré la température
-
 wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.36.tar.gz
-
 tar -xzf bcm2835-1.36.tar.gz
-
 rm bcm2835-1.36.tar.gz
-
 cd bcm2835-1.36
-
 ./configure
-
 make
-
 sudo make check
-
 sudo make install
 
 cd Adafruit-Raspberry-Pi-Python-Code/Adafruit_DHT_Driver_Python
 
 python setup.py build
+----
 
-Lancer l'executable suivi du N° du port (22) dans lequel la sonde est branché
+Lancez l'exécutable suivi du N° du port (22) dans lequel la sonde est branché
  
-==== Schéma électrique
-
-< à remplir >
+.schéma de branchement de la sonde de température
+image::images/Schemas.jpg[]
 
 ==== Script
 
@@ -149,43 +145,9 @@ ces données sur un FTP pour qu'on puisse l'afficher sur l'interface de gestion
 de la salle serveur.
 
 [source,bash,numbered]
----------------------------------
-#!/bin/bash
-
-#
-# KEVIN AMADO
-# Script créant un fichier avec les données
-# de température de la sonde
-#
-# SAMUEL CARDOSO
-# Optimisation du script
-# Ajout de l'envoi du fichier vers un FTP
-#
-# CFPT-EI - 2016
-#
-
-#/SC/ Initialisation
-HOST="10.134.96.205" 	# FTP HOST
-USER="camera"			# FTP USERNAME
-PASSWD="camera"			# FTP PASSWORD
-FILE="temperature.txt"  # FILE TO CREATE AND SEND
-PATH="/tmp/"			# FTP PATH
-
-#/KA/ Suppresion du fichier
-#/SC/ Suppression du fichier si celui-ci existe
-if [ -e $FILE ]
-then
-	rm $FILE
-fi
-
-#/KA/ Récupération des données de température de la sonde
-# et création d'un fichier contenant celle-ci
-sudo ./AdafruitDHT.py 22 22 > $FILE
-
-#/SC/ Envoie le fichier définit dans la variable FILE à l'hôte définit
-# dans la variable HOST dans le répertoire définit dans la variable PATH 
-scp $FILE $USER@$HOST:$PATH
----------------------------------
+----
+include::temperature.sh[]
+----
 
 == Solutions logiciels
 
