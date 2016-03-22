@@ -1,7 +1,7 @@
 <?php
-
 // IP de la camera
 $ipcamera = "10.134.96.210";
+
 
 
 // Connexion FTP
@@ -13,7 +13,11 @@ $FTP_MotDePasse = "camera";
 if (($ftp = ftp_connect($FTP_IP, 21)) == false) {
     echo 'Erreur de connexion...';
 }
+// Fichier données temperature
 
+// Ne pas afficher les erreurs au visiteurs
+ini_set("display_errors", 0);
+error_reporting(0);
 
 // Connexion utilisateur
 if (!ftp_login($ftp, $FTP_Pseudo, $FTP_MotDePasse)) {
@@ -26,10 +30,22 @@ if (isset($_GET['suppr'])) {
     header("Location: index.php");
 }
 
+// Récupère la date du jour pour le dossier video
+$DateDuJour = date("Ymd");
+
+
+// Regexp pour le température
+$regexTemperature= 'Temp=([+-]?[0-9]+.[+-]?[0-9]+)';
+
+// Regexp pour l'humidité
+$regexHumidite = 'Humidity=([+-]?[0-9]+.[+-]?[0-9]+)';
+
+
 // récupère tout les fichier et les mets dans un tableau
 $listes_fichiers = ftp_nlist($ftp, "."); // Le point signifie le dossier actuel
-// fonction suppresion
+$listes_Video = ftp_nlist($ftp, "./" . $DateDuJour . "/2100/");
 
+// fonction suppresion de fichier
 function DeleteFile($fichierAsupprimer) {
     global $ftp;
     // Tente d'effacer le fichier $file
@@ -81,40 +97,60 @@ function DeleteFile($fichierAsupprimer) {
             <form class="form-horizontal" method="post" action="#">
                 <?php
                 foreach ($listes_fichiers as $fichier) {
-                    $buff = ftp_mdtm($ftp, $fichier);
-                    if ($buff != -1) {
-                        echo "<br/>";
-                        echo "$fichier  : " . date("F d Y H:i:s.", $buff);
-                        ?>
-                        <a type="submit" class="btn btn-primary btn-xs"  href="ouvrir.php?open=<?php echo $fichier; ?>" name="BoutonOuvrir" >Ouvrir</a>
-                        <a type="submit" class="btn btn-danger btn-xs"  href="index.php?suppr=<?php echo $fichier; ?>" name="boutonsupprimer" >Supprimer</a><br/>
-                        <?php
-                    } else {
-                        echo "Impossible de récupérer mdtime";
+                    $regexExtensionFichier = '^.*\.(jpg|jpeg|png|gif|txt)$';
+                    $titre = eregi($regexExtensionFichier, $fichier, $regs);
+                    $buff = ftp_mdtm($ftp, $fichier);                 
+                    // buff: -1 c'est pour les dossiers
+                    if ($buff == -1){
+                        
                     }
+                    // Tester si c'est une image
+                        if (($buff != -1 ) && ($regs[1] == "jpg")) {
+                            echo "<br/>";
+                            ?> <b><?php echo "$fichier  : " . date("F d Y H:i:s.", $buff); ?></b><?php ?>           
+                            <a type="submit" class="btn btn-primary btn-xs"  href="ouvrir.php?open=<?php echo $fichier; ?>" name="BoutonOuvrir" >Ouvrir</a>
+                            <a type="submit" class="btn btn-danger btn-xs"  href="index.php?suppr=<?php echo $fichier; ?>" name="boutonsupprimer" >Supprimer</a><br/>
+                            <?php
+                        }
                 }
                 ?>
             </form>
 
 
             <h2><div class="label label-info ">Temperature</div></h2>
-            <?php
-            $temperature = 20;
-            $labelclass = '';
-            if ($temperature <= 20) {
-                $labelclass = "success";
-            } else if (($temperature > 20) && ($temperature < 50)) {
-                $labelclass = "warning";
-            } else if ($temperature >= 50) {
-                $labelclass = "danger";
-            }
-            echo '<h3><span class="label label-' . $labelclass . '">' . $temperature . '°C</span></h3>';
-            ?>
+<?php
+// récupère les données du fichier txt
+$fichiertemp="ftp://camera:camera@10.134.96.205/home/camera/tmp/temperature.txt";
+$handle = fopen($fichiertemp, "rb");
+$contents = stream_get_contents($handle);
+fclose($handle);
+
+// Recupère la température avec une regexp
+$titre2 = eregi($regexTemperature,$contents,$regsTmp);
+$temperature = $regsTmp[1];
+
+// Recupère l'humidité avec une regexp
+$titre2 = eregi($regexHumidite,$contents,$regsHum);
+$Humidite = $regsHum[1];
+
+
+$labelclass = '';
+if ($temperature <= 30) {
+    $labelclass = "success";
+} else if (($temperature > 30) && ($temperature < 50)) {
+    $labelclass = "warning";
+} else if ($temperature >= 50) {
+    $labelclass = "danger";
+}
+echo '<h3><span class="label label-' . $labelclass . '">' . $temperature . '°C</span></h3>';
+echo '<h2><div class="label label-info ">Humidité</div></h2>';
+echo '<h3><span class="label label-success">' . $Humidite . '%</span></h3>';
+?>
         </div>
     </center>
 
-    <?php
-    ftp_close($ftp); // ferme connexion
-    ?> 
+<?php
+ftp_close($ftp); // ferme connexion
+?> 
 </body>
 </html>
